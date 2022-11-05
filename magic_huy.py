@@ -81,7 +81,8 @@ async def handle_message(event: NewMessage.Event):
 
 
 if __name__ == '__main__':
-    print('[*] Connect to client...')
-    print('[*]Пожалуйста подождите')
+    print('[*] Подключение к клиенту...')
+    print('[*] Пожалуйста подождите')
+    print('[*] Код работает без Root прав')
     client.start()
     client.run_until_disconnected()
