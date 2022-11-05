@@ -9,18 +9,18 @@ API_HASH = '4f254e2cf003f527f94da5109d17b332'
 
 HEART = '🤍'
 COLORED_HEARTS = ['💗', '💓', '💖', '💘', '❤️', '💞']
-MAGIC_PHRASES = ['love']
+MAGIC_PHRASES = ['.huy']
 EDIT_DELAY = 0.01
 
 PARADE_MAP = '''
 00000000000
-00000000000
+00001110000
 00001110000
 00001110000
 00001110000
 00001110000
 00111111100
-00000100000
+00000000000
 '''
 
 client = TelegramClient('tg-account', APP_ID, API_HASH)
@@ -82,5 +82,6 @@ async def handle_message(event: NewMessage.Event):
 
 if __name__ == '__main__':
     print('[*] Connect to client...')
+    print('[*]Пожалуйста подождите')
     client.start()
     client.run_until_disconnected()
