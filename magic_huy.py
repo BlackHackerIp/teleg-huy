@@ -14,12 +14,14 @@ EDIT_DELAY = 0.01
 
 PARADE_MAP = '''
 00000000000
+00000000000
+00000100000
 00001110000
 00001110000
 00001110000
 00001110000
 00001110000
-00111111100
+00011111000
 00000000000
 '''
 
@@ -39,19 +41,15 @@ def generate_parade_colored():
 
 
 async def process_love_words(event: NewMessage.Event):
-    await client.edit_message(event.peer_id.user_id, event.message.id, 'i')
+    await client.edit_message(event.peer_id.user_id, event.message.id, 'You')
     await asyncio.sleep(1)
-    await client.edit_message(event.peer_id.user_id, event.message.id, 'i love')
+    await client.edit_message(event.peer_id.user_id, event.message.id, 'You should')
     await asyncio.sleep(1)
-    await client.edit_message(event.peer_id.user_id, event.message.id, 'i love you')
+    await client.edit_message(event.peer_id.user_id, event.message.id, 'You should-(on)')
     await asyncio.sleep(1)
-    await client.edit_message(event.peer_id.user_id, event.message.id, 'i love you forever')
+    await client.edit_message(event.peer_id.user_id, event.message.id, 'You should-(on) love')
     await asyncio.sleep(1)
-    await client.edit_message(event.peer_id.user_id, event.message.id, 'i love you forever,')
-    await asyncio.sleep(1)
-    await client.edit_message(event.peer_id.user_id, event.message.id, 'i love you forever, honey')
-    await asyncio.sleep(1)
-    await client.edit_message(event.peer_id.user_id, event.message.id, 'i love you forever, honey💗')
+    await client.edit_message(event.peer_id.user_id, event.message.id, 'You should-(on) love dick💗')
 
 
 async def process_build_place(event: NewMessage.Event):
